@@ -1,0 +1,46 @@
+<!-- StarCatcher Game for David's Soft Dev class 2015-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StarCatcher - Software Development</title>
+<!--    our link to the javascript file that will control the game actions -->
+    <script type="text/javascript" src="scScripts.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!--    out styles will be internal until we need to move them to an external file -->
+    <style type="text/css">
+        html, body {margin: 5px;}
+        canvas {display: block;}
+        #game {
+            margin-left: auto;
+            margin-right: auto;
+            width: 900px;
+            height: 700px;
+            background-color: lightblue;
+            border-radius: 10px;
+        }
+        .centerText {text-align: center;}
+      #leftSide {
+            float:left;
+            width: 100px;
+            margin-left:40px;
+        }
+        #rightSide {
+            float: right;
+            width: 100px;
+            margin-right:40px;
+        }        
+    </style>
+</head>
+<body>
+    <h2 class="centerText">Survive!</h2>
+
+    <p id="leftSide">Player 2: <span id="p1ScoreDisp">0</span></p>
+    <p id="rightSide">Player 1: <span id="p2ScoreDisp">0</span></p>
+
+    <p id="leftSide">Player 2 Lives: <span id="p1LivesDisp">3</span></p>
+    <p id="rightSide">Player 1 Lives: <span id="p2LivesDisp">3</span></p>
+    <div id="game">
+        <canvas id="myCanvas"></canvas>
+    </div>
+</body>
+</html>
